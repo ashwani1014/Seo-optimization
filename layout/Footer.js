@@ -19,25 +19,25 @@ const Footer = () => {
               </p>
               <ul className="d-flex flex-wrap">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/postiview">
                     <i className="fab fa-facebook-f" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/postiview/s">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
+                  <a href="https://www.instagram.com/postiview/">
+                    <i className="fab fa-instagram" />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">
                     <i className="fab fa-pinterest-p" />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
