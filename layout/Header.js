@@ -142,7 +142,7 @@ const Header = () => {
                     <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>
                       Services
                     </Link>
-                    <ul className="mobile-submenu">
+                    {/* <ul className="mobile-submenu">
                       <li>
                         <Link href="/services/brand-strategy" onClick={() => setIsMobileMenuOpen(false)}>Brand Strategy</Link>
                       </li>
@@ -161,7 +161,7 @@ const Header = () => {
                       <li>
                         <Link href="/services/video-motion" onClick={() => setIsMobileMenuOpen(false)}>Video & Motion</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <Link href="/portfolio" onClick={() => setIsMobileMenuOpen(false)}>
