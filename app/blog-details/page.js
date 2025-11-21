@@ -26,7 +26,7 @@ const page = () => {
     //               <li>
     //                 <div className="img">
     //                   <img
-    //                     src="images/details_bloger.png"
+    //                     src="/images/details_bloger.png"
     //                     alt="bloger"
     //                     className="img-fluid w-100"
     //                   />
@@ -47,7 +47,7 @@ const page = () => {
     //           <div className="tf__blog_details_img">
     //             <div data-animation="img-blur" data-scroll={0}>
     //               <img
-    //                 src="images/futured_work_img_9.jpg"
+    //                 src="/images/futured_work_img_9.jpg"
     //                 alt="blog details"
     //                 className="img-fluid w-100"
     //               />

@@ -3,6 +3,49 @@ import FxotaryLayout from "@/layout/FxotaryLayout";
 import { serviceData } from "@/lib/serviceData";
 import { notFound } from "next/navigation";
 
+export async function generateStaticParams() {
+  return serviceData.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
+export async function generateMetadata({ params }) {
+  const service = serviceData.find((s) => s.slug === params.slug);
+
+  if (!service) {
+    return {
+      title: "Service Not Found - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+      description: "The requested service could not be found. Explore other branding services from Postiview, the leading branding agency in Ahmedabad, Gujarat.",
+    };
+  }
+
+  return {
+    title: `${service.title} - Postiview: Leading Branding Agency in Ahmedabad, Gujarat`,
+    description: `${service.description1.substring(0, 150)}... Read more about ${service.title} from Postiview, the leading branding agency in Ahmedabad, Gujarat.`,
+    keywords: ["Branding Agency Ahmedabad", "Best Branding Agency Gujarat", "Brand Identity Ahmedabad", "Visual Design Ahmedabad", "Website Design Ahmedabad", "Brand Strategy Ahmedabad", service.title],
+    openGraph: {
+      title: `${service.title} - Postiview: Leading Branding Agency in Ahmedabad, Gujarat`,
+      description: `${service.description1.substring(0, 150)}...`,
+      url: `https://postiview.in/services/${service.slug}`,
+      images: [
+        {
+          url: `https://postiview.in/images/services/${service.image1}`,
+          width: 800,
+          height: 600,
+          alt: service.title,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} - Postiview: Leading Branding Agency in Ahmedabad, Gujarat`,
+      description: `${service.description1.substring(0, 150)}...`,
+      images: [`https://postiview.in/images/services/${service.image1}`],
+    },
+  };
+}
+
 export default function ServiceDetails({ params }) {
   const service = serviceData.find((s) => s.slug === params.slug);
 

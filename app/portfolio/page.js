@@ -15,6 +15,44 @@ export const metadata = {
     "Creative Agency Portfolio",
     "Branding Agency Ahmedabad Work",
   ],
+  alternates: {
+    canonical: `https://postiview.in/portfolio`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Portfolio - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Explore Postiview's branding portfolio featuring identity design, UI/UX, digital branding, packaging, and visual communication work. A showcase of creative excellence from Ahmedabad’s top branding agency.",
+    url: "https://postiview.in/portfolio",
+    siteName: "Postiview",
+    images: [
+      {
+        url: "https://postiview.in/images/og-image.webp", // Use a generic OG image for portfolio
+        width: 800,
+        height: 600,
+        alt: "Postiview Portfolio - Branding Agency",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Explore Postiview's branding portfolio featuring identity design, UI/UX, digital branding, packaging, and visual communication work. A showcase of creative excellence from Ahmedabad’s top branding agency.",
+    images: ["https://postiview.in/images/og-image.webp"],
+  },
 };
 
 const page = () => {

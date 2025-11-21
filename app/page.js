@@ -235,7 +235,7 @@ const page = () => {
                   </div>
                   <div className="img">
                     <img
-                      src="images/what_we_do_img.jpg"
+                      src="/images/what_we_do_img.jpg"
                       alt="what we do"
                       className="img-fluid w-100"
                     />
@@ -275,20 +275,20 @@ const page = () => {
               </div>
               <Link
                 href="https://thevandana.in/"
-                className="latest_project_img d-block cursor-arrow c-pointer"
+                className="latest_project_img d-block cursor-arrow c-pointer "
                 data-cursor='<i class="fx-icon-long-next-arrow"></i>'
               >
                 <div data-animation="img-blur">
                   <img
                     src="/images/project/project_img_1.png"
                     alt="projext"
-                    className="img-fluid w-100"
+                    className="img-fluid"
                   />
                 </div>
-                <div className="text d-flex flex-column">
+                {/* <div className="text d-flex flex-column">
                   <h3>VH Club Website</h3>
                   <h3>Design and Development</h3>
-                </div>
+                </div> */}
               </Link>
             </div>
             <div className="col-xl-5 col-md-6">
@@ -304,12 +304,12 @@ const page = () => {
                     className="img-fluid w-100"
                   />
                 </div>
-                <div className="text d-flex flex-column">
+                {/* <div className="text d-flex flex-column">
                   <h3>BVM Hospital Website</h3>
                   <h3>Design and Development</h3>
-                </div>
+                </div> */}
               </Link>
-              {/* <h4>Want to See More Projects</h4> */}
+              <h4>Want to See More Projects</h4>
             </div>
           </div>
         </div>
@@ -442,7 +442,7 @@ const page = () => {
                 <div className="img_1">
                   <div data-animation="img-blur">
                     <img
-                      src="images/achivement_img_1.jpg"
+                      src="/images/achivement_img_1.jpg"
                       alt="achivement"
                       className="img-fluid w-100"
                     />
@@ -451,7 +451,7 @@ const page = () => {
                 <div className="img_2">
                   <div data-animation="img-blur">
                     <img
-                      src="images/achivement_img_2.jpg"
+                      src="/images/achivement_img_2.jpg"
                       alt="achivement"
                       className="img-fluid w-100"
                     />
@@ -465,7 +465,7 @@ const page = () => {
                   <li data-animation="">
                     <div className="icon">
                       <img
-                        src="images/achivement_icon_1.png"
+                        src="/images/achivement_icon_1.png"
                         alt="icon"
                         className="img-fluid w-100"
                       />
@@ -481,7 +481,7 @@ const page = () => {
                   <li data-animation="">
                     <div className="icon">
                       <img
-                        src="images/achivement_icon_2.png"
+                        src="/images/achivement_icon_2.png"
                         alt="icon"
                         className="img-fluid w-100"
                       />
@@ -497,7 +497,7 @@ const page = () => {
                   <li data-animation="">
                     <div className="icon">
                       <img
-                        src="images/achivement_icon_3.png"
+                        src="/images/achivement_icon_3.png"
                         alt="icon"
                         className="img-fluid w-100"
                       />
@@ -513,7 +513,7 @@ const page = () => {
                   <li data-animation="">
                     <div className="icon">
                       <img
-                        src="images/achivement_icon_4.png"
+                        src="/images/achivement_icon_4.png"
                         alt="icon"
                         className="img-fluid w-100"
                       />
@@ -631,7 +631,7 @@ const page = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="images/brand_1.jpg"
+                        src="/images/brand_1.jpg"
                         alt="brand"
                         className="img-fluid w-100"
                       />
@@ -640,7 +640,7 @@ const page = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="images/brand_5.jpg"
+                        src="/images/brand_5.jpg"
                         alt="brand"
                         className="img-fluid w-100"
                       />
@@ -649,7 +649,7 @@ const page = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="images/brand_2.jpg"
+                        src="/images/brand_2.jpg"
                         alt="brand"
                         className="img-fluid w-100"
                       />
@@ -658,7 +658,7 @@ const page = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="images/brand_3.jpg"
+                        src="/images/brand_3.jpg"
                         alt="brand"
                         className="img-fluid w-100"
                       />
@@ -667,7 +667,7 @@ const page = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="images/brand_6.jpg"
+                        src="/images/brand_6.jpg"
                         alt="brand"
                         className="img-fluid w-100"
                       />
@@ -676,7 +676,7 @@ const page = () => {
                   <li>
                     <a href="#">
                       <img
-                        src="images/brand_4.jpg"
+                        src="/images/brand_4.jpg"
                         alt="brand"
                         className="img-fluid w-100"
                       />

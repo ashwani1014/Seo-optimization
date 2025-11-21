@@ -1660,7 +1660,11 @@
         PORTFOLIO DETAILS END
     ==================================*/
 }
-
+@media (max-width:768px) {
+  .latest_project_img .text {
+    left:10%;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.99px) {
   /*==================================
         HOME PAGE START
@@ -1848,6 +1852,8 @@
   }
 
   .latest_project_img .text {
+ 
+    
     padding: 20px;
   }
 

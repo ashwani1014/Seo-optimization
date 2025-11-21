@@ -4,27 +4,33 @@ import Link from "next/link";
 import { blogs } from "@/lib/blogs";
 import ContactForm from "@/components/ContactForm";
 
+export async function generateStaticParams() {
+  return blogs.map((blog) => ({
+    slug: blog.slug,
+  }));
+}
+
 export async function generateMetadata({ params }) {
   const blog = blogs.find((blog) => blog.slug === params.slug);
 
   if (!blog) {
     return {
-      title: "Blog Not Found - Postiview: Digital Marketing Agency in Ahmedabad, Gujarat",
-      description: "The requested blog post could not be found. Explore other digital marketing insights from Postiview, the best digital marketing agency in Ahmedabad, Gujarat.",
+      title: "Blog Not Found - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+      description: "The requested blog post could not be found. Explore other branding insights from Postiview, the leading branding agency in Ahmedabad, Gujarat.",
     };
   }
 
   return {
-    title: `${blog.title} - Postiview Blog: Digital Marketing Agency Ahmedabad, Gujarat`,
-    description: `${blog.content[0].substring(0, 150)}... Read the full article for insights from the best digital marketing agency in Ahmedabad, Gujarat.`,
-    keywords: ["Digital Marketing Blog", "SEO Tips", "Content Strategy", "Digital Marketing Agency Ahmedabad", "Gujarat Marketing Trends", blog.title, blog.category],
+    title: `${blog.title} | Postiview: Leading Branding Agency in Ahmedabad, Gujarat`,
+    description: `${blog.content[0].substring(0, 150)}... Read the full article for insights from Postiview, the leading branding agency in Ahmedabad, Gujarat.`,
+    keywords: ["Branding Agency Ahmedabad", "Best Branding Agency Gujarat", "Brand Identity Ahmedabad", "Visual Design Ahmedabad", "Website Design Ahmedabad", "Brand Strategy Ahmedabad", blog.title, blog.category],
     openGraph: {
-      title: `${blog.title} - Postiview Blog`,
+      title: `${blog.title} - Postiview: Leading Branding Agency in Ahmedabad, Gujarat`,
       description: `${blog.content[0].substring(0, 150)}...`,
       url: `https://postiview.in/blog-details/${blog.slug}`,
       images: [
         {
-          url: `https://postiview.in${blog.image}`, // Assuming blog.image is relative path
+          url: `https://postiview.in/images/blogs/${blog.image}`,
           width: 800,
           height: 600,
           alt: blog.title,
@@ -34,9 +40,9 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${blog.title} - Postiview Blog`,
+      title: `${blog.title} - Postiview: Leading Branding Agency in Ahmedabad, Gujarat`,
       description: `${blog.content[0].substring(0, 150)}...`,
-      images: [`https://postiview.in${blog.image}`],
+      images: [`https://postiview.in/images/blogs/${blog.image}`],
     },
   };
 }
@@ -64,7 +70,7 @@ const page = ({params}) => {
                   {/* <li>
                     <div className="img">
                       <img
-                        src="images/details_bloger.png"
+                        src="/images/details_bloger.png"
                         alt="bloger"
                         className="img-fluid w-100"
                       />

@@ -3,9 +3,47 @@ import FxotaryLayout from "@/layout/FxotaryLayout";
 import ContactForm from "@/components/ContactForm"; // Import the new component
 
 export const metadata = {
-  title: "Contact Us - Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
-  description: "Get in touch with Postiview, the best digital marketing agency in Ahmedabad, Gujarat. Contact us for inquiries, partnerships, or to discuss your digital marketing needs.",
-  keywords: ["Contact Digital Marketing Agency Ahmedabad", "Postiview Contact", "Digital Marketing Inquiry Gujarat", "Ahmedabad Marketing Agency Phone", "Email Postiview"],
+  title: "Contact Us - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+  description: "Get in touch with Postiview, the leading branding agency in Ahmedabad, Gujarat. Contact us for inquiries, partnerships, or to discuss your branding needs.",
+  keywords: ["Contact Branding Agency Ahmedabad", "Postiview Contact", "Branding Inquiry Gujarat", "Ahmedabad Branding Agency Phone", "Email Postiview"],
+  alternates: {
+    canonical: `https://postiview.in/contact`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Contact Us - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Get in touch with Postiview, the leading branding agency in Ahmedabad, Gujarat. Contact us for inquiries, partnerships, or to discuss your branding needs.",
+    url: "https://postiview.in/contact",
+    siteName: "Postiview",
+    images: [
+      {
+        url: "https://postiview.in/images/og-image.webp", // Use a generic OG image for contact us
+        width: 800,
+        height: 600,
+        alt: "Contact Postiview - Branding Agency",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Get in touch with Postiview, the leading branding agency in Ahmedabad, Gujarat. Contact us for inquiries, partnerships, or to discuss your branding needs.",
+    images: ["https://postiview.in/images/og-image.webp"],
+  },
 };
 
 const page = () => {

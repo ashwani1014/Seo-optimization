@@ -53,7 +53,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="portfolio"
+                  href="/portfolio"
                   className="text_hover_animaiton text_hover_type_2"
                 >
                   Portfolio
@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="services"
+                  href="/services"
                   className="text_hover_animaiton text_hover_type_2"
                 >
                   Services
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="contact"
+                  href="/contact"
                   className="text_hover_animaiton text_hover_type_2"
                 >
                   Contact
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="blog"
+                  href="/blog"
                   className="text_hover_animaiton text_hover_type_2"
                 >
                   Blog

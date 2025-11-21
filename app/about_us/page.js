@@ -5,9 +5,47 @@ import FxotaryLayout from "@/layout/FxotaryLayout";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Us - Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
-  description: "Learn about Postiview, the best digital marketing agency in Ahmedabad, Gujarat. Our story, mission, and dedicated team provide innovative digital solutions across Gujarat.",
-  keywords: ["About Postiview", "Digital Marketing Agency Ahmedabad", "Best Digital Marketing Agency Gujarat", "Our Story", "Digital Solutions Gujarat", "Marketing Company Ahmedabad"],
+  title: "About Us - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+  description: "Learn about Postiview, the leading branding agency in Ahmedabad, Gujarat. Our story, mission, and dedicated team provide innovative brand solutions across Gujarat.",
+  keywords: ["About Postiview", "Branding Agency Ahmedabad", "Best Branding Agency Gujarat", "Our Story", "Brand Solutions Gujarat", "Marketing Company Ahmedabad"],
+  alternates: {
+    canonical: `https://postiview.in/about_us`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "About Us - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Learn about Postiview, the leading branding agency in Ahmedabad, Gujarat. Our story, mission, and dedicated team provide innovative brand solutions across Gujarat.",
+    url: "https://postiview.in/about_us",
+    siteName: "Postiview",
+    images: [
+      {
+        url: "https://postiview.in/images/og-image.webp", // Use a generic OG image for about us
+        width: 800,
+        height: 600,
+        alt: "About Postiview - Branding Agency",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Learn about Postiview, the leading branding agency in Ahmedabad, Gujarat. Our story, mission, and dedicated team provide innovative brand solutions across Gujarat.",
+    images: ["https://postiview.in/images/og-image.webp"],
+  },
 };
 
 const page = () => {
@@ -46,7 +84,7 @@ const page = () => {
         <div className="about_us_2_img">
           <div data-animation="img-blur" data-scroll={0} data-delay={0}>
             <img
-              src="images/about_img_3.webp"
+              src="/images/about_img_3.webp"
               alt="about us"
               className="img-fluid w-100"
             />
@@ -83,7 +121,7 @@ const page = () => {
             <div className="col-xl-6 col-md-6">
               <div className="counter_img">
                 <img
-                  src="images/counter_img_2.png"
+                  src="/images/counter_img_2.png"
                   alt="counter"
                   className="img-fluid w-100"
                 />
@@ -170,7 +208,7 @@ const page = () => {
               >
                 <a href="#" className="single_team_img cursor-arrow">
                   <img
-                    src="images/team_1.jpg"
+                    src="/images/team_1.jpg"
                     alt="team"
                     className="img-fluid w-100"
                   />
@@ -187,7 +225,7 @@ const page = () => {
               >
                 <a href="#" className="single_team_img cursor-arrow">
                   <img
-                    src="images/team_2.jpg"
+                    src="/images/team_2.jpg"
                     alt="team"
                     className="img-fluid w-100"
                   />
@@ -204,7 +242,7 @@ const page = () => {
               >
                 <a href="#" className="single_team_img cursor-arrow">
                   <img
-                    src="images/team_3.jpg"
+                    src="/images/team_3.jpg"
                     alt="team"
                     className="img-fluid w-100"
                   />

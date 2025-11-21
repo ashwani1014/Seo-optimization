@@ -5,17 +5,55 @@ import { blogs } from '@/lib/blogs';
 
 export const metadata = {
   title:
-    'Blog - Postiview: Digital Marketing Insights & Updates in Ahmedabad, Gujarat',
+    'Blog - Postiview: Branding Insights & Updates from Ahmedabad, Gujarat',
   description:
-    'Explore the latest digital marketing trends, strategies, and insights from Postiview, the best digital marketing agency in Ahmedabad, Gujarat. Stay informed with our expert blog posts.',
+    'Explore the latest branding trends, strategies, and insights from Postiview, the leading branding agency in Ahmedabad, Gujarat. Stay informed with our expert blog posts.',
   keywords: [
-    'Digital Marketing Blog',
-    'SEO Blog',
-    'Social Media Marketing Blog',
-    'Content Marketing Blog',
-    'Digital Marketing Agency Ahmedabad Blog',
-    'Gujarat Marketing Insights',
+    'Branding Blog',
+    'Brand Strategy Blog',
+    'Brand Identity Blog',
+    'Visual Design Blog',
+    'Branding Agency Ahmedabad Blog',
+    'Gujarat Branding Insights',
   ],
+  alternates: {
+    canonical: `https://postiview.in/blog`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Blog - Postiview: Branding Insights & Updates from Ahmedabad, Gujarat",
+    description: "Explore the latest branding trends, strategies, and insights from Postiview, the leading branding agency in Ahmedabad, Gujarat. Stay informed with our expert blog posts.",
+    url: "https://postiview.in/blog",
+    siteName: "Postiview",
+    images: [
+      {
+        url: "https://postiview.in/images/og-image.webp", // Use a generic OG image for blog
+        width: 800,
+        height: 600,
+        alt: "Postiview Blog - Branding Agency",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - Postiview: Branding Insights & Updates from Ahmedabad, Gujarat",
+    description: "Explore the latest branding trends, strategies, and insights from Postiview, the leading branding agency in Ahmedabad, Gujarat. Stay informed with our expert blog posts.",
+    images: ["https://postiview.in/images/og-image.webp"],
+  },
 };
 
 const page = () => {

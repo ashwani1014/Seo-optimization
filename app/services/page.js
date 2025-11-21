@@ -1,6 +1,51 @@
 import Question from "@/components/Question";
 import FxotaryLayout from "@/layout/FxotaryLayout";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Services - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+  description: "Explore comprehensive branding services from Postiview, the leading branding agency in Ahmedabad, Gujarat. We offer strategic brand identity, visual design, UI/UX, packaging, and video solutions across Gujarat.",
+  keywords: ["Branding Services Ahmedabad", "Brand Identity Services Gujarat", "Visual Design Services Ahmedabad", "UI/UX Services Gujarat", "Packaging Design Ahmedabad", "Video Production Branding Gujarat"],
+  alternates: {
+    canonical: `https://postiview.in/services`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Services - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Explore comprehensive branding services from Postiview, the leading branding agency in Ahmedabad, Gujarat. We offer strategic brand identity, visual design, UI/UX, packaging, and video solutions across Gujarat.",
+    url: "https://postiview.in/services",
+    siteName: "Postiview",
+    images: [
+      {
+        url: "https://postiview.in/images/og-image.webp", // Use a generic OG image for services
+        width: 800,
+        height: 600,
+        alt: "Postiview Services - Branding Agency",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Explore comprehensive branding services from Postiview, the leading branding agency in Ahmedabad, Gujarat. We offer strategic brand identity, visual design, UI/UX, packaging, and video solutions across Gujarat.",
+    images: ["https://postiview.in/images/og-image.webp"],
+  },
+};
+
 const page = () => {
   return (
     <FxotaryLayout>
@@ -37,7 +82,7 @@ const page = () => {
                 <div className="tf__services_2_img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/services/brand-strategy.webp"
+                      src="/images/services/brand-strategy.webp"
                       alt="Brand Strategy"
                       className="img-fluid w-100"
                     />
@@ -96,7 +141,7 @@ const page = () => {
                 <div className="tf__services_2_img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/services/brand-identity.webp"
+                      src="/images/services/brand-identity.webp"
                       alt="Brand Identity & Logo"
                       className="img-fluid w-100"
                     />
@@ -109,7 +154,7 @@ const page = () => {
                 <div className="tf__services_2_img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/services/graphic-designing.webp"
+                      src="/images/services/graphic-designing.webp"
                       alt="Visual & Graphic Design"
                       className="img-fluid w-100"
                     />
@@ -168,7 +213,7 @@ const page = () => {
                 <div className="tf__services_2_img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/services/programming.webp"
+                      src="/images/services/programming.webp"
                       alt="Digital Brand Experience"
                       className="img-fluid w-100"
                     />
@@ -181,7 +226,7 @@ const page = () => {
                 <div className="tf__services_2_img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/services/packaging.webp"
+                      src="/images/services/packaging.webp"
                       alt="Packaging & Print"
                       className="img-fluid w-100"
                     />
@@ -240,7 +285,7 @@ const page = () => {
                 <div className="tf__services_2_img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/services/video.webp"
+                      src="/images/services/video.webp"
                       alt="Video & Motion"
                       className="img-fluid w-100"
                     />
