@@ -6,9 +6,18 @@ import Link from 'next/link';
 import Marquee from 'react-fast-marquee';
 
 export const metadata = {
-  title: "Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
-  description: "Postiview is the leading digital marketing agency in Ahmedabad, Gujarat. We help businesses grow with expert SEO, social media, web design, and comprehensive digital marketing services.",
-  keywords: ["Digital Marketing Agency Ahmedabad", "Best Digital Marketing Agency Gujarat", "SEO Ahmedabad", "Social Media Marketing Ahmedabad", "Website Design Ahmedabad", "Digital Marketing Services Ahmedabad", "Home"],
+  title: 'Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat',
+  description:
+    'Postiview is the leading digital marketing agency in Ahmedabad, Gujarat. We help businesses grow with expert SEO, social media, web design, and comprehensive digital marketing services.',
+  keywords: [
+    'Digital Marketing Agency Ahmedabad',
+    'Best Digital Marketing Agency Gujarat',
+    'SEO Ahmedabad',
+    'Social Media Marketing Ahmedabad',
+    'Website Design Ahmedabad',
+    'Digital Marketing Services Ahmedabad',
+    'Home',
+  ],
 };
 
 const page = () => {
@@ -25,11 +34,11 @@ const page = () => {
           <div className="row">
             <div className="col-12">
               <div className="banner_text">
-                <h4>Digital Marketing Hub</h4>
+                <h4>Branding Studio Hub</h4>
                 <h1 className="banner_title">
-                  Top Digital Agency in{' '}
+                  Top Branding Agency
                   <span>
-                    <b>Ahmedabad!</b>
+                    in <b>Ahmedabad!</b>
                   </span>
                 </h1>
               </div>
@@ -50,13 +59,13 @@ const page = () => {
             <span>Follow Us</span>
           </li>
           <li>
-            <a href="#">Fb.</a>
+            <a href="https://www.facebook.com/postiview">Fb.</a>
           </li>
           <li>
-            <a href="#">Be.</a>
+            <a href="https://www.linkedin.com/company/postiview">Ln.</a>
           </li>
           <li>
-            <a href="#">Yt.</a>
+            <a href="https://www.instagram.com/postiview/">In.</a>
           </li>
         </ul>
       </section>
@@ -78,10 +87,10 @@ const page = () => {
                     data-split="word"
                     data-duration={1}
                   >
-                    We are a top digital agency in Gujarat.
+                    We are a top branding agency in Gujarat.
                   </h2>
                 </div>
-                <Link className="circle_btn" href="about_us">
+                <Link className="circle_btn" href="/about_us">
                   Learn More <i className="fx-icon-next-arrow" />
                 </Link>
               </div>
@@ -91,17 +100,17 @@ const page = () => {
                 <div className="img">
                   <div data-animation="img-blur">
                     <img
-                      src="images/about/about_img_1.webp"
+                      src="/images/about/about_img_1.webp"
                       alt="about"
                       className="img-fluid w-100"
                     />
                   </div>
                 </div>
                 <p>
-                  We are the best digital marketing agency in Ahmedabad,
-                  offering global-level digital solutions across Gujarat with
-                  innovative strategies and modern tools that strengthen brands,
-                  boost growth, and elevate businesses worldwide.
+                  We are the leading branding agency in Ahmedabad, crafting
+                  future-ready brand identities, communication systems, and
+                  visual experiences that strengthen brands, shape perception,
+                  and elevate businesses across Gujarat and worldwide.
                 </p>
               </div>
             </div>
@@ -109,7 +118,7 @@ const page = () => {
               <div className="about_img_2">
                 <div data-animation="img-blur">
                   <img
-                    src="images/about/about_img_2.webp"
+                    src="/images/about/about_img_2.webp"
                     alt="about"
                     className="img-fluid w-100"
                   />
@@ -131,11 +140,11 @@ const page = () => {
             <div className="col-xl-5 col-md-7">
               <div className="what_we_do_text">
                 <p>
-                  We create tailored digital experiences that help brands stand
-                  out, spark interaction, and achieve real growth. As the best
-                  digital marketing agency in Ahmedabad, our skilled team blends
-                  smart creativity with modern tech to elevate businesses across
-                  Gujarat.
+                  We create strategic brand experiences designed to help
+                  businesses stand out, inspire trust, and achieve measurable
+                  growth. As the best branding agency in Ahmedabad, our team
+                  blends creative intelligence with modern tools to build brands
+                  that thrive across Gujarat.
                 </p>
                 <Link className="view_btn" href="/services">
                   View All Services <i className="fx-icon-next-arrow" />
@@ -168,22 +177,22 @@ const page = () => {
                     />
                   </div>
                   <div className="text">
-                    <h3>Graphic & Designing</h3>
+                    <h3>Brand Identity & Design</h3>
                     <p>
-                      Bring your ideas to life with our Graphic & Designing
-                      expertise. Strengthen your visual identity and communicate
-                      your brand story through striking, well-crafted creative
-                      work.
+                    Bring your brand to life with powerful identity systems and thoughtful design. Build a strong visual presence and communicate your brand story through consistent, well-crafted creative work.
                     </p>
                   </div>
                   <div className="img">
                     <img
-                      src="images/what_we_do_img.jpg"
+                      src="/images/what_we_do_img.jpg"
                       alt="what we do"
                       className="img-fluid w-100"
                     />
                   </div>
-                  <Link className="circle_btn" href="/services/graphic_designing">
+                  <Link
+                    className="circle_btn"
+                    href="/services/graphic_designing"
+                  >
                     details
                   </Link>
                 </li>
@@ -194,18 +203,15 @@ const page = () => {
                 >
                   <div className="icon">
                     <img
-                      src="icons/web-programming.svg"
+                      src="/icons/web-programming.svg"
                       alt="about"
                       className="img-fluid w-100 svg"
                     />
                   </div>
                   <div className="text">
-                    <h3>Programming & Tech</h3>
+                    <h3>Brand-Tech Solutions</h3>
                     <p>
-                      Give your business a technological edge. Our Programming &
-                      Tech services deliver custom-built software and digital
-                      tools designed to support your goals and keep you
-                      competitive across Gujarat.
+                      Give your brand a modern digital edge. Our Brand-Tech services include websites, digital ecosystems, and interactive tools designed to support your goals and keep your business relevant across Gujarat.
                     </p>
                   </div>
                 </li>
@@ -222,13 +228,9 @@ const page = () => {
                     />
                   </div>
                   <div className="text">
-                    <h3>Digital Marketing</h3>
+                    <h3>Digital Brand Building</h3>
                     <p>
-                      Move confidently through today’s digital world with our
-                      Digital Marketing solutions. As the best digital marketing
-                      agency in Ahmedabad, we develop strategies and run
-                      campaigns that improve your visibility and amplify your
-                      brand online.
+                     Strengthen your presence in a digital-first world. As the best branding agency in Ahmedabad, we create strategies and campaigns that improve visibility, enhance perception, and amplify your brand across online channels.
                     </p>
                   </div>
                   <div className="img">
@@ -238,7 +240,10 @@ const page = () => {
                       className="img-fluid w-100"
                     />
                   </div>
-                  <Link className="circle_btn" href="/services/digital_marketing">
+                  <Link
+                    className="circle_btn"
+                    href="/services/digital_marketing"
+                  >
                     details
                   </Link>
                 </li>
@@ -265,10 +270,7 @@ const page = () => {
                   </h2>
                 </div>
                 <p>
-                  As the best digital marketing agency in Ahmedabad, we showcase
-                  work that reflects strong creativity and smart execution. Our
-                  team in Gujarat delivers results that blend design, strategy,
-                  and modern technology to elevate every brand we work with.
+                 As the best branding agency in Ahmedabad, we showcase work built on strategy, design precision, and creative excellence. Our team in Gujarat delivers branding solutions that merge identity, storytelling, and technology to elevate every brand we partner with.
                 </p>
               </div>
               <Link
@@ -278,7 +280,7 @@ const page = () => {
               >
                 <div data-animation="img-blur">
                   <img
-                    src="images/project/project_img_1.webp"
+                    src="/images/project/project_img_1.png"
                     alt="projext"
                     className="img-fluid w-100"
                   />
@@ -297,7 +299,7 @@ const page = () => {
               >
                 <div data-animation="img-blur">
                   <img
-                    src="images/project/project_img_2.jpg"
+                    src="/images/project/project_img_2.png"
                     alt="projext"
                     className="img-fluid w-100"
                   />
@@ -311,178 +313,94 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="row mt_175 marquee_section">
-          <div className="col-12">
-            <div className="marquee-container">
-              <Marquee className="marquee_animi" direction="left">
-                <ul className="project_slider d-flex flex-wrap">
-                  <li>
-                    <Link href="/services/programming-tech">
-                      <p>Programming & Tech</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid" 
-                        />
-                        <span>03</span>
-                      </div> */}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services/digital_marketing">
-                      <p>Digital Marketing</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid"
-                        />
-                        <span>05</span>
-                      </div> */}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services/video-animation">
-                      <p>Video & Animation</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid"
-                        />
-                        <span>07</span>
-                      </div> */}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services/writing-translation">
-                      <p>Writing & Translation</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid"
-                        />
-                        <span>14</span>
-                      </div> */}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services/business_solution">
-                      <p>Business Solution</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid"
-                        />
-                        <span>42</span>
-                      </div> */}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services/graphic_designing">
-                      <p>Graphic & Designing</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid"
-                        />
-                        <span>42</span>
-                      </div> */}
-                    </Link>
-                  </li>
-                </ul>
-              </Marquee>
-            </div>
-          </div>
-          <div className="col-12 mt_30">
-            <Marquee className="marquee_animi2" direction="right">
-              <ul className="project_slider d-flex flex-wrap">
-                <li>
-                  <Link href="/services/programming-tech">
-                    <p>Programming & Tech</p>
-                    {/* <div className="img">
-                      <img
-                        src="images/project_iten_img.jpg"
-                        alt="project"
-                        className="img-fluid"
-                      />
-                      <span>03</span>
-                    </div> */}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/digital_marketing">
-                    <p>Digital Marketing</p>
-                    {/* <div className="img">
-                      <img
-                        src="images/project_iten_img.jpg"
-                        alt="project"
-                        className="img-fluid"
-                      />
-                      <span>05</span>
-                    </div> */}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/video-animation">
-                    <p>Video & Animation</p>
-                    {/* <div className="img">
-                      <img
-                        src="images/project_iten_img.jpg"
-                        alt="project"
-                        className="img-fluid"
-                      />
-                      <span>07</span>
-                    </div> */}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/writing-translation">
-                    <p>Writing & Translation</p>
-                    {/* <div className="img">
-                      <img
-                        src="images/project_iten_img.jpg"
-                        alt="project"
-                        className="img-fluid"
-                      />
-                      <span>14</span>
-                    </div> */}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/business_solution">
-                    <p>Business Solution</p>
-                    {/* <div className="img">
-                      <img
-                        src="images/project_iten_img.jpg"
-                        alt="project"
-                        className="img-fluid"
-                      />
-                      <span>42</span>
-                    </div> */}
-                  </Link>
-                </li>
-                <li>
-                    <Link href="/services/graphic_designing">
-                      <p>Graphic & Designing</p>
-                      {/* <div className="img">
-                        <img
-                          src="images/project_iten_img.jpg"
-                          alt="project"
-                          className="img-fluid"
-                        />
-                        <span>42</span>
-                      </div> */}
-                    </Link>
-                  </li>
-              </ul>
-            </Marquee>
-          </div>
-        </div>
+      <div className="row mt_175 marquee_section">
+  <div className="col-12">
+    <div className="marquee-container">
+      <Marquee className="marquee_animi" direction="left">
+        <ul className="project_slider d-flex flex-wrap">
+          <li>
+            <Link href="/services/digital-branding">
+              <p>Digital Branding</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/digital-branding">
+              <p>UI/UX & Website</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/packaging-print">
+              <p>Packaging Design</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/brand-strategy">
+              <p>Business Branding</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/visual-design">
+              <p>Visual Communication</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/brand-identity">
+              <p>Brand Identity</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services/digital-branding">
+              <p>Digital Branding</p>
+            </Link>
+          </li>
+        </ul>
+      </Marquee>
+    </div>
+  </div>
+
+  <div className="col-12 mt_30">
+    <Marquee className="marquee_animi2" direction="right">
+      <ul className="project_slider d-flex flex-wrap">
+        <li>
+          <Link href="/services/digital-branding">
+            <p>Digital Branding</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services/digital-branding">
+            <p>UI/UX & Website</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services/packaging-print">
+            <p>Packaging Design</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services/brand-strategy">
+            <p>Business Branding</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services/visual-design">
+            <p>Visual Communication</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services/brand-identity">
+            <p>Brand Identity</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/services/digital-branding">
+            <p>Digital Branding</p>
+          </Link>
+        </li>
+      </ul>
+    </Marquee>
+  </div>
+</div>
+
       </section>
       {/*===============================
   LATEST PROJECT END
@@ -490,7 +408,7 @@ const page = () => {
       {/*===============================
   COUNTER START
     ===============================*/}
-     <CounterSection/>
+      <CounterSection />
       {/*===============================
   COUNTER END
     ===============================*/}
@@ -631,7 +549,7 @@ const page = () => {
       {/*===============================
   BLOG START
     ===============================*/}
-        <section className="blog pt_120 xs_pt_80">
+      <section className="blog pt_120 xs_pt_80">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5 col-md-8">
@@ -645,10 +563,7 @@ const page = () => {
             <div className="col-lg-7 col-md-12">
               <div className="blog_right_text">
                 <p>
-                  "Dive into cutting-edge insights, latest trends, and valuable
-                  updates to stay ahead in the dynamic digital realm with
-                  Gujarat's leading digital marketing agency in Ahmedabad,
-                  empowering brands throughout the region."
+                  "Dive into branding insights, creative trends, and strategic updates to stay ahead in the evolving brand landscape with Gujarat's leading branding agency in Ahmedabad."
                 </p>
                 <Link className="circle_btn" href="blog_grid">
                   View All <br />
@@ -661,7 +576,9 @@ const page = () => {
             {blogs.slice(0, 3).map((blog, index) => (
               <div
                 key={blog.id}
-                className={`col-lg-4 col-md-6 ${index === 0 ? 'first_blog' : index === 2 ? 'last_blog' : ''}`}
+                className={`col-lg-4 col-md-6 ${
+                  index === 0 ? 'first_blog' : index === 2 ? 'last_blog' : ''
+                }`}
                 data-animation="fade-left"
                 data-delay={index === 0 ? '' : index === 1 ? '.75' : '1'}
               >
@@ -671,7 +588,10 @@ const page = () => {
                       <li>{blog.category}</li>
                       <li>{blog.date}</li>
                     </ul>
-                    <Link className="title" href={`/blog-details/${blog?.slug}`}>
+                    <Link
+                      className="title"
+                      href={`/blog-details/${blog?.slug}`}
+                    >
                       {blog.title}
                     </Link>
                   </div>

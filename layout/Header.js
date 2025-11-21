@@ -13,7 +13,7 @@ const Header = () => {
             <Link href="/" className="navbar-brand">
               <img
                 src="/images/logo-black.png"
-                alt="Fxotary"
+                alt="Postiview"
                 className="img-fluid w-100"
               />
             </Link>
@@ -37,24 +37,22 @@ const Header = () => {
                     </Link>
                     <ul className="submenu">
                       <li>
-                        <Link href="/services/graphic_designing">Graphic Designing</Link>
+                        <Link href="/services/brand-strategy">Brand Strategy</Link>
                       </li>
                       <li>
-                        <Link href="/services/digital_marketing">Digital Marketing</Link>
+                        <Link href="/services/brand-identity">Brand Identity & Logo</Link>
                       </li>
                       <li>
-                        <Link href="/services/programming-tech">Programming & Tech</Link>
+                        <Link href="/services/visual-design">Visual & Graphic Design</Link>
                       </li>
                       <li>
-                        <Link href="/services/video-animation">Video & Animation</Link>
+                        <Link href="/services/digital-branding">Digital Brand Experience</Link>
                       </li>
                       <li>
-                        <Link href="/services/writing-translation">
-                          Writing & Translation
-                        </Link>
+                        <Link href="/services/packaging-print">Packaging & Print</Link>
                       </li>
                       <li>
-                        <Link href="/services/business_solution">Business Solution</Link>
+                        <Link href="/services/video-motion">Video & Motion</Link>
                       </li>
                     </ul>
                   </li>
@@ -92,7 +90,7 @@ const Header = () => {
                 <Link href="/">
                   <img
                     src="/images/logo-black.png"
-                    alt="Fxotary"
+                    alt="Postiview"
                     className="img-fluid w-100"
                   />
                 </Link>
@@ -102,7 +100,6 @@ const Header = () => {
                   className="menu-bar navbar-toggler"
                   type="button"
                   onClick={() => setIsMobileMenuOpen(true)}
-                  // style={{ backgroundColor: 'black', color: 'white', fontSize: '20px', border: '1px solid white' }}
                 >
                   ☰
                 </button>
@@ -117,7 +114,7 @@ const Header = () => {
                 <Link href="/">
                   <img
                     src="/images/logo-black.png"
-                    alt="Fxotary"
+                    alt="Postiview"
                     className="img-fluid w-100"
                   />
                 </Link>
@@ -145,6 +142,26 @@ const Header = () => {
                     <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>
                       Services
                     </Link>
+                    <ul className="mobile-submenu">
+                      <li>
+                        <Link href="/services/brand-strategy" onClick={() => setIsMobileMenuOpen(false)}>Brand Strategy</Link>
+                      </li>
+                      <li>
+                        <Link href="/services/brand-identity" onClick={() => setIsMobileMenuOpen(false)}>Brand Identity & Logo</Link>
+                      </li>
+                      <li>
+                        <Link href="/services/visual-design" onClick={() => setIsMobileMenuOpen(false)}>Visual & Graphic Design</Link>
+                      </li>
+                      <li>
+                        <Link href="/services/digital-branding" onClick={() => setIsMobileMenuOpen(false)}>Digital Brand Experience</Link>
+                      </li>
+                      <li>
+                        <Link href="/services/packaging-print" onClick={() => setIsMobileMenuOpen(false)}>Packaging & Print</Link>
+                      </li>
+                      <li>
+                        <Link href="/services/video-motion" onClick={() => setIsMobileMenuOpen(false)}>Video & Motion</Link>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <Link href="/portfolio" onClick={() => setIsMobileMenuOpen(false)}>
@@ -167,19 +184,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      {/* <div className={`menu_search ${toggle ? 'show_search' : ''}`}>
-        <form>
-          <input type="text" placeholder="Search" />
-          <button type="submit">Search</button>
-          <span
-            className="close_search c-pointer"
-            onClick={() => setToggle(false)}
-          >
-            <i className="fa-sharp fa-light fa-xmark" />
-          </span>
-          <i className="icon-down-arrow" />
-        </form>
-      </div> */}
       <div
         className={`body-overlay ${toggle ? 'show' : ''}`}
         onClick={() => setToggle(false)}

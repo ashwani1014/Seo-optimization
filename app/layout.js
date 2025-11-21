@@ -11,32 +11,32 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL('https://postiview.in'),
   title: {
-    default: "Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
-    template: "%s | Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
+    default: "Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    template: "%s | Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
   },
-  description: "Postiview is the best digital marketing agency in Ahmedabad, Gujarat, generating results for your business. We offer top-notch digital marketing services in Gujarat.",
-  keywords: ["Digital Marketing Agency Ahmedabad", "Best Digital Marketing Agency Gujarat", "SEO Ahmedabad", "Social Media Marketing Ahmedabad", "Website Design Ahmedabad", "Digital Marketing Services Ahmedabad"],
+  description: "Postiview is the leading branding agency in Ahmedabad, Gujarat, shaping memorable brand identities and digital experiences. We offer top-tier branding services across Gujarat.",
+  keywords: ["Branding Agency Ahmedabad", "Best Branding Agency Gujarat", "Brand Identity Ahmedabad", "Visual Design Ahmedabad", "Website Design Ahmedabad", "Brand Strategy Ahmedabad"],
   openGraph: {
-    title: "Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
-    description: "Postiview is the best digital marketing agency in Ahmedabad, Gujarat, generating results for your business. We offer top-notch digital marketing services in Gujarat.",
+    title: "Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Postiview is the leading branding agency in Ahmedabad, Gujarat, shaping memorable brand identities and digital experiences. We offer top-tier branding services across Gujarat.",
     url: "https://postiview.in/",
     siteName: "Postiview",
     images: [
       {
-        url: "https://postiview.in/images/og-image.webp", // Assuming a logo or relevant image exists here
+        url: "https://postiview.in/images/og-image.webp",
         width: 800,
         height: 600,
-        alt: "Postiview - Digital Marketing Agency",
+        alt: "Postiview - Branding Agency",
       },
     ],
-    locale: "en_IN", // Assuming India locale
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Postiview: Best Digital Marketing Agency in Ahmedabad, Gujarat",
-    description: "Postiview is the best digital marketing agency in Ahmedabad, Gujarat, generating results for your business. We offer top-notch digital marketing services in Gujarat.",
-    images: ["https://postiview.in/images/og-image.webp"], 
+    title: "Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+    description: "Postiview is the leading branding agency in Ahmedabad, Gujarat, shaping memorable brand identities and digital experiences. We offer top-tier branding services across Gujarat.",
+    images: ["https://postiview.in/images/og-image.webp"],
   },
   alternates: {
     canonical: "https://postiview.in/",
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
               "name": "Postiview",
               "url": "https://postiview.in/",
               "logo": "https://postiview.in/images/logo.png",
-              "description": "Postiview is the best digital marketing agency in Ahmedabad, Gujarat, generating results for your business.",
+              "description": "Postiview is the leading branding agency in Ahmedabad, Gujarat, shaping memorable brand identities and digital experiences.",
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
@@ -92,7 +92,7 @@ export default function RootLayout({ children }) {
               ],
               "email": "mailto:info@postiview.com",
               "sameAs": [
-                "https://www.facebook.com/your-page", // Replace with actual social media links
+                "https://www.facebook.com/your-page",
                 "https://twitter.com/your-page",
                 "https://www.linkedin.com/company/your-company"
               ]
@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
               "url": "https://postiview.in/",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://postiview.in/search?q={search_term_string}", // Replace with actual search URL if available
+                "target": "https://postiview.in/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })
@@ -157,7 +157,6 @@ export default function RootLayout({ children }) {
                   "name": "Contact",
                   "item": "https://postiview.in/contact"
                 }
-                // Sub-service pages would typically be added dynamically within their respective page components.
               ]
             })
           }}

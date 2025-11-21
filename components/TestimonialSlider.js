@@ -4,42 +4,43 @@ import Slider from "react-slick";
 
 const testimonials = [
   {
-    text: "Working with the best digital marketing agency in Ahmedabad elevated our brand instantly.",
+    text: "Working with the leading branding agency in Ahmedabad sharpened our brand instantly.",
     name: "Harshil Mehta",
     role: "UI/UX Designer",
     img: "images/testimonial_img.png",
   },
   {
-    text: "Their team brought clarity and direction to our strategy. Every deliverable arrived polished and professional.",
+    text: "Their team brought clarity and focus to our brand strategy. Every deliverable felt polished and purposeful.",
     name: "Dhruv Patel",
     role: "Brand Manager",
     img: "images/testimonial_img.png",
   },
   {
-    text: "Their development skills helped us launch a fast, modern site with zero hassle. Smooth from start to finish.",
+    text: "Their design and development launched a fast, modern brand site with zero hassle. Smooth from start to finish.",
     name: "Nidhi Shah",
     role: "Entrepreneur",
     img: "images/testimonial_img.png",
   },
   {
-    text: "The results we saw in Gujarat were incredible. Engagement grew and our campaigns finally started performing.",
+    text: "The results across Gujarat were remarkable. Brand engagement climbed and our campaigns started delivering.",
     name: "Jaydeep Trivedi",
     role: "Marketing Lead",
     img: "images/testimonial_img.png",
   },
   {
-    text: "Their creativity made our brand look sharper than ever. Reliable, skilled, and easy to work with.",
+    text: "Their creativity made our brand look sharper than ever. Reliable, skilled, and a pleasure to work with.",
     name: "Priya Vyas",
     role: "Business Owner",
     img: "images/testimonial_img.png",
   },
   {
-    text: "Thanks to their marketing insights, our visibility increased fast. You can feel they know their craft well.",
+    text: "Thanks to their branding insights, our visibility rose quickly. You can tell they know their craft inside out.",
     name: "Kunal Desai",
     role: "Store Owner",
     img: "images/testimonial_img.png",
   },
 ];
+
 
 
 const TestimonialSlider = () => {

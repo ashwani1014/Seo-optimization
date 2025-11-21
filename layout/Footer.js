@@ -15,7 +15,7 @@ const Footer = () => {
                 />
               </Link>
               <p>
-                Discover PostiView, the best digital marketing agency in Ahmedabad, Gujarat. We excel as the best digital marketing agency in Ahmedabad Gujarat, driving success through innovative strategies.
+              Discover PostiView, the best branding agency in Ahmedabad, Gujarat. We excel as the leading branding studio in Ahmedabad Gujarat, building strong brands through strategy, creativity, and smart execution.
               </p>
               <ul className="d-flex flex-wrap">
                 <li>
@@ -24,7 +24,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/postiview/s">
+                  <a href="https://www.linkedin.com/company/postiview">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </li>

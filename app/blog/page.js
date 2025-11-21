@@ -1,13 +1,21 @@
-
-import Question from "@/components/Question";
-import FxotaryLayout from "@/layout/FxotaryLayout";
-import Link from "next/link";
+import Question from '@/components/Question';
+import FxotaryLayout from '@/layout/FxotaryLayout';
+import Link from 'next/link';
 import { blogs } from '@/lib/blogs';
 
 export const metadata = {
-  title: "Blog - Postiview: Digital Marketing Insights & Updates in Ahmedabad, Gujarat",
-  description: "Explore the latest digital marketing trends, strategies, and insights from Postiview, the best digital marketing agency in Ahmedabad, Gujarat. Stay informed with our expert blog posts.",
-  keywords: ["Digital Marketing Blog", "SEO Blog", "Social Media Marketing Blog", "Content Marketing Blog", "Digital Marketing Agency Ahmedabad Blog", "Gujarat Marketing Insights"],
+  title:
+    'Blog - Postiview: Digital Marketing Insights & Updates in Ahmedabad, Gujarat',
+  description:
+    'Explore the latest digital marketing trends, strategies, and insights from Postiview, the best digital marketing agency in Ahmedabad, Gujarat. Stay informed with our expert blog posts.',
+  keywords: [
+    'Digital Marketing Blog',
+    'SEO Blog',
+    'Social Media Marketing Blog',
+    'Content Marketing Blog',
+    'Digital Marketing Agency Ahmedabad Blog',
+    'Gujarat Marketing Insights',
+  ],
 };
 
 const page = () => {
@@ -25,15 +33,28 @@ const page = () => {
             <div className="col-xl-5 col-sm-7 col-md-6">
               <div className="tf__portfolio_page_text">
                 <p>
-                  Explore our latest blogs from the best digital marketing agency in Ahmedabad Gujarat, where we share insights, trends, and strategies to help brands in Ahmedabad and Gujarat succeed in the digital space. Stay updated with expert tips from postiview's team of digital marketing experts.
+                  Explore our latest blogs from the leading branding agency in
+                  Ahmedabad Gujarat, where we share insights, trends, and
+                  strategies to help brands across Ahmedabad and Gujarat
+                  strengthen their identity and presence. Stay updated with
+                  expert guidance from Postiview’s team of branding specialists.
                 </p>
               </div>
             </div>
           </div>
+
           <div className="row mt_35">
             {blogs.map((blog, index) => (
               <div key={blog.id} className="col-lg-4 col-md-6">
-                <div className={`single_blog ${index % 3 === 0 ? 'first_blog' : index % 3 === 2 ? 'last_blog' : ''}`}>
+                <div
+                  className={`single_blog ${
+                    index % 3 === 0
+                      ? 'first_blog'
+                      : index % 3 === 2
+                      ? 'last_blog'
+                      : ''
+                  }`}
+                >
                   <div className="single_blog_text">
                     <ul className="d-flex flex-wrap">
                       <li>{blog.category}</li>

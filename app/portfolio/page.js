@@ -4,9 +4,17 @@ import Link from "next/link";
 import { portfolioData } from "@/lib/portfolioData";
 
 export const metadata = {
-  title: "Portfolio - Postiview: Digital Marketing Agency Ahmedabad, Gujarat",
-  description: "Explore the innovative digital marketing and creative work portfolio of Postiview, the best digital marketing agency in Ahmedabad, Gujarat. See our success stories.",
-  keywords: ["Digital Marketing Portfolio", "Creative Projects Ahmedabad", "Web Design Portfolio Gujarat", "SEO Case Studies", "Social Media Campaigns", "Digital Marketing Agency Ahmedabad Work"],
+  title: "Portfolio - Postiview: Leading Branding Agency in Ahmedabad, Gujarat",
+  description:
+    "Explore Postiview's branding portfolio featuring identity design, UI/UX, digital branding, packaging, and visual communication work. A showcase of creative excellence from Ahmedabad’s top branding agency.",
+  keywords: [
+    "Branding Portfolio Ahmedabad",
+    "Brand Identity Work Gujarat",
+    "UI/UX Design Portfolio",
+    "Brand Strategy Case Studies",
+    "Creative Agency Portfolio",
+    "Branding Agency Ahmedabad Work",
+  ],
 };
 
 const page = () => {
@@ -21,21 +29,26 @@ const page = () => {
                 <h2 className="banner_title">Our Latest Creative Works</h2>
               </div>
             </div>
+
             <div className="col-lg-5 col-md-7">
               <div className="tf__portfolio_page_text">
                 <p>
-                  Explore our diverse portfolio showcasing innovative digital marketing solutions and creative projects from the best digital marketing agency in Ahmedabad, serving clients across Gujarat.
+                  Explore our curated selection of branding, identity design, digital experiences, packaging, and creative visuals crafted for brands across Gujarat. Every project reflects our commitment to strategic clarity and creative excellence as Ahmedabad’s leading branding agency.
                 </p>
               </div>
             </div>
           </div>
+
           <div className="row mt_60 justify-content-between">
-            {portfolioData.map((item, index) => (
+            {portfolioData.map((item) => (
               <div
                 key={item.id}
-                className={`col-xl-5 col-md-6 ${item.id % 2 === 0 ? "item_2" : ""}`}
+                className={`col-xl-5 col-md-6`}
               >
-                <div className={`tf__featured_work_item ${item.id % 2 === 0 ? "" : (item.id === 3 || item.id === 5) ? "tf__featured_work_item_small" : ""}`}>
+                <div
+                  className={` tf__featured_work_item_small mb-5
+                  `} 
+                >
                   <Link
                     href={item.link}
                     className="cursor-arrow tf__featured_work_item_img"
@@ -48,12 +61,17 @@ const page = () => {
                       />
                     </div>
                   </Link>
-                  <Link href={item.link}>
+
+                  <Link href={item.link} className="d-flex">
                     <h3 data-text-animation="" data-split="word">
                       {item.title}
                     </h3>
                   </Link>
-                  <p data-text-animation="slide-from-right" data-split="char">
+
+                  <p
+                    data-text-animation="slide-from-right"
+                    data-split="char"
+                  >
                     {item.category}
                   </p>
                 </div>
@@ -62,8 +80,10 @@ const page = () => {
           </div>
         </div>
       </section>
+
       <Question />
     </FxotaryLayout>
   );
 };
+
 export default page;

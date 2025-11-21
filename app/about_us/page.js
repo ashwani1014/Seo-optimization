@@ -16,58 +16,61 @@ const page = () => {
       {/*===============================
   ABOUT US 2 START
     ===============================*/}
-      <section className="tf__about_us_2 mt_190 xs_mt_150">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="section_heading">
-                <h5>ABOUT US</h5>
-                <h2 className="banner_title" data-text-animation="slide-up">
-                  We empower clients to succeed by creating powerful brand identities and unforgettable digital experiences.
-                </h2>
-              </div>
-              <div className="about_text_2">
-                <p>
-                  Welcome to Postiview, the best digital marketing agency in Ahmedabad, Gujarat. We are dedicated to transforming your brand's digital presence through innovative strategies and impactful results that set you apart.
-                </p>
-                <Link
-                  className="circle_btn circle_btn_2 learn_more_2"
-                  href="services"
-                >
-                  <i className="fx-icon-long-next-arrow" /> Explore Our <br />
-                  Services
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 col-md-9 mx-auto ">
-              <div className="about_us_2_img">
-                <div data-animation="img-blur" data-scroll={0} data-delay={0}>
-                  <img
-                    src="images/about_img_3.webp"
-                    alt="about us"
-                    className="img-fluid w-100"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="about_text_2_details section_heading">
-                <h5>OUR STORY</h5>
-                <p>
-                  Our story began with a clear mission: to become the best digital marketing agency in Ahmedabad. Our passionate team of researchers, strategists, and creatives excels at turning complex challenges into growth opportunities, building brands that connect with people across Gujarat. We are more than an agency; we are your dedicated partner.
-                </p>
-                <p>
-                  As the best digital marketing agency in Ahmedabad, we are committed to delivering excellence. Our approach combines data-driven insights with creative storytelling to elevate your brand. We understand the local market of Gujarat, enabling us to craft campaigns that not only reach but also resonate with your target audience, ensuring sustainable growth.
-                </p>
-              </div>
-            </div>
+    <section className="tf__about_us_2 mt_190 xs_mt_150">
+  <div className="container">
+    <div className="row">
+      <div className="col-12">
+        <div className="section_heading">
+          <h5>ABOUT US</h5>
+          <h2 className="banner_title" data-text-animation="slide-up">
+            We empower clients to grow by crafting powerful brand identities and unforgettable visual experiences.
+          </h2>
+        </div>
+        <div className="about_text_2">
+          <p>
+            Welcome to Postiview, the leading branding agency in Ahmedabad, Gujarat. We are dedicated to shaping brands that stand out with strategic thinking, creative precision, and identity-driven solutions that leave a lasting impact.
+          </p>
+          <Link
+            className="circle_btn circle_btn_2 learn_more_2"
+            href="services"
+          >
+            <i className="fx-icon-long-next-arrow" /> Explore Our <br />
+            Services
+          </Link>
+        </div>
+      </div>
+    </div>
+
+    <div className="row">
+      <div className="col-12 col-md-9 mx-auto ">
+        <div className="about_us_2_img">
+          <div data-animation="img-blur" data-scroll={0} data-delay={0}>
+            <img
+              src="images/about_img_3.webp"
+              alt="about us"
+              className="img-fluid w-100"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <div className="row">
+      <div className="col-12">
+        <div className="about_text_2_details section_heading">
+          <h5>OUR STORY</h5>
+          <p>
+            Our journey began with a clear mission: to become the most trusted branding agency in Ahmedabad. Our team of strategists, designers, and visual thinkers excels at transforming complex ideas into meaningful brand experiences that connect with audiences across Gujarat. We don’t just build brands; we build long-term partnerships.
+          </p>
+          <p>
+            As Ahmedabad’s leading branding agency, we focus on delivering excellence at every step. Our approach blends research-driven insights with creative storytelling to elevate your brand identity. With deep understanding of Gujarat’s market landscape, we craft branding solutions that not only stand out but also resonate, ensuring strong and sustainable brand growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/*===============================
   ABOUT US 2 END
     ===============================*/}

@@ -10,7 +10,7 @@ export default function CounterSection() {
             <div className="col-xl-6 col-md-6">
               <div className="counter_img">
                 <img
-                  src="/images/counter_img.webp"
+                  src="/images/counter_img.png"
                   alt="counter"
                   className="img-fluid w-100"
                 />
@@ -23,7 +23,7 @@ export default function CounterSection() {
                     <h2 className="count">
                       <Counter end={70} />+
                     </h2>
-                    <p>Project completed</p>
+                    <p>Brands Completed</p>
                   </div>
                 </div>
                 <div
@@ -35,7 +35,7 @@ export default function CounterSection() {
                     <h2 className="count">
                       <Counter end={15} />
                     </h2>
-                    <p>Skilled Professional</p>
+                    <p>Brand Specialists</p>
                   </div>
                 </div>
                 <div
@@ -47,7 +47,7 @@ export default function CounterSection() {
                     <h2 className="count">
                       <Counter end={100} />
                     </h2>
-                    <p>Visited Conference</p>
+                    <p>Workshops Attended</p>
                   </div>
                 </div>
                 <div
