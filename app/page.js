@@ -565,9 +565,9 @@ const page = () => {
                 <p>
                   "Dive into branding insights, creative trends, and strategic updates to stay ahead in the evolving brand landscape with Gujarat's leading branding agency in Ahmedabad."
                 </p>
-                <Link className="circle_btn" href="blog_grid">
+                <Link className="circle_btn" href="/blog">
                   View All <br />
-                  Our News <i className="fx-icon-next-arrow" />
+                  Our Blogs <i className="fx-icon-next-arrow" />
                 </Link>
               </div>
             </div>
