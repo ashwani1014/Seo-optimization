@@ -56,13 +56,13 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                   <li>
-                    <Link href="/portfolio" className="text_hover_animaiton">
-                      <TextHoverAnimation text={'Portfolio'} />
+                  <li>
+                    <Link href="/our-client" className="text_hover_animaiton">
+                      <TextHoverAnimation text={'Our Client'} />
                     </Link>
                   </li>
-                   <li>
-                    <Link href="/blog" className="text_hover_animaiton">
+                  <li>
+                    <Link href="https://positive.view.in" className="text_hover_animaiton">
                       <TextHoverAnimation text={'Blog'} />
                     </Link>
                   </li>

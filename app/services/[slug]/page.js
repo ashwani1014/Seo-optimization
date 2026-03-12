@@ -73,7 +73,7 @@ export default function ServiceDetails({ params }) {
             <div className="col-xl-8 col-md-6">
               <div className="tf__services_2_text">
                 <div className="d-lg-flex">
-                  <p>{service.description1}</p>
+                  <p className="pe-lg-4 gap-15">{service.description1}</p>
                   <p>{service.description2}</p>
                 </div>
                 <ul>

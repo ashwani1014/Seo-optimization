@@ -436,19 +436,19 @@ html.lenis {
 
 /* dasktop menu */
 
-.main-menu > .navbar-nav > ul > li {
+.main-menu>.navbar-nav>ul>li {
   position: relative;
   display: inline-block;
 }
 
-.main-menu .navbar-nav > ul > .dropdown-nav li > a:hover,
-.main-menu .navbar-nav > ul > .dropdown-nav li a.active {
+.main-menu .navbar-nav>ul>.dropdown-nav li>a:hover,
+.main-menu .navbar-nav>ul>.dropdown-nav li a.active {
   background: var(--colorPrimary);
   color: var(--colorWhite);
   border-color: #ffffff6e;
 }
 
-.main-menu .navbar-nav > ul > li > a {
+.main-menu .navbar-nav>ul>li>a {
   display: inline-block;
   color: var(--colorBlack);
   font-size: 16px;
@@ -462,11 +462,11 @@ html.lenis {
   -webkit-transition: all linear 0.3s;
 }
 
-.main-menu > .navbar-nav > ul > li.dropdown-nav > a {
+.main-menu>.navbar-nav>ul>li.dropdown-nav>a {
   position: relative;
 }
 
-.main-menu > .navbar-nav > ul > li .submenu {
+.main-menu>.navbar-nav>ul>li .submenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -484,17 +484,17 @@ html.lenis {
   transition: all linear 0.2s;
 }
 
-.main-menu > .navbar-nav > ul > li .submenu {
+.main-menu>.navbar-nav>ul>li .submenu {
   transition: all 0.3s 0s ease-out;
 }
 
-.main-menu > .navbar-nav > ul > li .submenu li {
+.main-menu>.navbar-nav>ul>li .submenu li {
   margin-left: 0;
   line-height: 30px;
   position: relative;
 }
 
-.main-menu > .navbar-nav > ul > li .submenu li a {
+.main-menu>.navbar-nav>ul>li .submenu li a {
   color: var(--colorBlack);
   display: block;
   border-bottom: 1px solid #2c73651a;
@@ -506,7 +506,7 @@ html.lenis {
   letter-spacing: 0.4px;
 }
 
-.main-menu > .navbar-nav > ul > li .submenu li .submenu {
+.main-menu>.navbar-nav>ul>li .submenu li .submenu {
   left: 100%;
   top: 0;
   visibility: hidden;
@@ -514,21 +514,21 @@ html.lenis {
   font-size: 16px;
 }
 
-.main-menu > .navbar-nav > ul > li:hover > .submenu {
+.main-menu>.navbar-nav>ul>li:hover>.submenu {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
   -webkit-transform: scale(1);
 }
 
-.main-menu > .navbar-nav > ul > li .submenu li:hover > .submenu {
+.main-menu>.navbar-nav>ul>li .submenu li:hover>.submenu {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
   -webkit-transform: scale(1);
 }
 
-.main-menu > .navbar-nav ul li.dropdown-nav > a::after {
+.main-menu>.navbar-nav ul li.dropdown-nav>a::after {
   content: "\e900";
   font-family: "Fx-Icon" !important;
   transform: translateY(1px);
@@ -546,7 +546,7 @@ html.lenis {
   display: inline-block;
 }
 
-.main-menu .navbar-nav .submenu li.dropdown-nav > a::after {
+.main-menu .navbar-nav .submenu li.dropdown-nav>a::after {
   position: absolute;
 }
 
@@ -571,21 +571,16 @@ html.lenis {
   right: 0;
 }
 
-.main-menu-mobile ul li.dropdown-nav > a .dropdown-toggle-btn i {
+.main-menu-mobile ul li.dropdown-nav>a .dropdown-toggle-btn i {
   transition: all 0.3s ease-in-out;
   color: var(--colorBlack);
 }
 
-.main-menu-mobile
-  ul
-  li.dropdown-nav
-  > a
-  .dropdown-toggle-btn.dropdown-opened
-  i {
+.main-menu-mobile ul li.dropdown-nav>a .dropdown-toggle-btn.dropdown-opened i {
   transform: rotate(90deg);
 }
 
-.main-menu-mobile .navbar-nav > ul > li:first-child > a {
+.main-menu-mobile .navbar-nav>ul>li:first-child>a {
   border-top: 0;
 }
 
@@ -656,6 +651,7 @@ html.lenis {
   opacity: 0;
   transition: 0.45s ease-in-out;
 }
+
 .body-overlay.show {
   opacity: 1;
   visibility: visible;
@@ -1311,10 +1307,12 @@ html.lenis {
   margin-top: 55px;
   z-index: 1;
 }
+
 .latest_project_img img {
   height: 350px;
- object-fit: contain !important;
+  object-fit: contain !important;
 }
+
 .latest_project_img::after {
   position: absolute;
   content: "";
@@ -1361,7 +1359,7 @@ html.lenis {
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
-  
+
 }
 
 .latest_project_img .text h3 {
@@ -2038,7 +2036,8 @@ footer {
 .footer_address p {
   color: #82838c;
   line-height: 30px;
-  margin-top: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .footer_address a {
@@ -3618,6 +3617,7 @@ footer::after {
 .ball-arrow i {
   font-size: 50px;
 }
+
 .slider-arrow i {
   font-size: 24px;
 }
@@ -3719,6 +3719,7 @@ h5.preloader-text::after {
 .text_hover_animaiton:hover .menu-text div {
   --m: calc(16px * -1);
 }
+
 .text_hover_animaiton.text_hover_type_2 {
   line-height: 28px;
 }
@@ -3742,6 +3743,7 @@ h5.preloader-text::after {
   text-shadow: 0 16px 0 var(--colorPrimary);
   display: flex;
 }
+
 .hover_black.text_hover_type_2 .menu-text {
   text-shadow: 0 16px 0 var(--colorBlack);
 }
@@ -3763,62 +3765,77 @@ h5.preloader-text::after {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(2) {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(3) {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(4) {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(5) {
   -webkit-transition-delay: 0.25s;
   transition-delay: 0.25s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(6) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(7) {
   -webkit-transition-delay: 0.35s;
   transition-delay: 0.35s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(8) {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(9) {
   -webkit-transition-delay: 0.45s;
   transition-delay: 0.45s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(10) {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(11) {
   -webkit-transition-delay: 0.55s;
   transition-delay: 0.55s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(12) {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(13) {
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(14) {
   -webkit-transition-delay: 75s;
   transition-delay: 0.75s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(15) {
   -webkit-transition-delay: 0.8s;
   transition-delay: 0.8s;
 }
+
 .text_hover_animaiton:hover .menu-text div:nth-child(16) {
   -webkit-transition-delay: 0.85s;
   transition-delay: 0.85s;
@@ -3827,6 +3844,7 @@ h5.preloader-text::after {
 .fxotary_animation[data-animation-type="fadeIn"] {
   opacity: 0.7;
 }
+
 /*==============================
  TEXT ANIMATION END
 ===============================*/

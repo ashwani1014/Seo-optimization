@@ -62,18 +62,19 @@ const page = () => {
             </div>
             <div className="col-lg-5 col-md-7">
               <div className="tf__portfolio_page_text">
-             
+
                 <div className="contact_details_info">
-                    <h4>Call Us:</h4>
-                    <p><a href="tel:+919426988865">+91 94269 88865</a></p>
-                    <p><a href="tel:+14379886426">+1 (437) 988-6426</a></p>
-                    <br />
-                    <h4>Email:</h4>
-                    <p><a href="mailto:info@postiview.com">info@postiview.com</a></p>
-                    <br />
-                    <h4>Visit Us:</h4>
-                    <p>India: 47, Mehul Society, Near Airport, Deesa, Gujarat, India</p>
-                    <p>Canada: 13 Davenfield Cir, Brampton, ON L6P 4M2, Canada</p>
+                  <h4>Call Us:</h4>
+                  <p><a href="tel:+919426988865">+91 94269 88865</a></p>
+                  <p><a href="tel:+14379886426">+1 (437) 988-6426</a></p>
+                  <br />
+                  <h4>Email:</h4>
+                  <p><a href="mailto:info@postiview.com">info@postiview.com</a></p>
+                  <br />
+                  <h4>Visit Us:</h4>
+                  <p>Ahmedabad:FF/43, Vishwas City-2, Near I.D.Patel School, Ghatlodia, Ahmedabad. 380061</p>
+                  <p>Deesa: 47, Mehul Society, Near Airport, Deesa, Gujarat, India</p>
+                  <p>Canada: 13 Davenfield Cir, Brampton, ON L6P 4M2, Canada</p>
                 </div>
               </div>
             </div>

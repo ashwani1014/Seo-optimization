@@ -15,7 +15,7 @@ const Footer = () => {
                 />
               </Link>
               <p>
-              Discover PostiView, the best branding agency in Ahmedabad, Gujarat. We excel as the leading branding studio in Ahmedabad Gujarat, building strong brands through strategy, creativity, and smart execution.
+                Discover PostiView, the best branding agency in Ahmedabad, Gujarat. We excel as the leading branding studio in Ahmedabad Gujarat, building strong brands through strategy, creativity, and smart execution.
               </p>
               <ul className="d-flex flex-wrap">
                 <li>
@@ -88,8 +88,10 @@ const Footer = () => {
           <div className="col-xl-2 col-md-6 col-lg-3">
             <div className="footer_address">
               <h3>Address</h3>
-              <p>India: 47, Mehul Society, Near Airport, Deesa, Gujarat, India</p>
-              <p>Canada: 13 Davenfield Cir, Brampton, ON L6P 4M2, Canada</p>
+              <p>Ahmedabad</p>
+              <p>Deesa</p>
+              <p>Canada</p>
+              <p>Delhi</p>
             </div>
           </div>
           <div className="col-xl-2 col-md-6 col-lg-3">
