@@ -8,11 +8,7 @@
 # testing
 /coverage
 
-# production
-/build
-.next
-out
-
+ 
 # misc
 .DS_Store
 *.pem
