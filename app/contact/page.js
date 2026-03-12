@@ -72,7 +72,7 @@ const page = () => {
                   <p><a href="mailto:info@postiview.com">info@postiview.com</a></p>
                   <br />
                   <h4>Visit Us:</h4>
-                  <p>Ahmedabad:FF/43, Vishwas City-2, Near I.D.Patel School, Ghatlodia, Ahmedabad. 380061</p>
+                  <p>Ahmedabad : FF/43, Vishwas City-2, Near I.D.Patel School, Ghatlodia, Ahmedabad. 380061</p>
                   <p>Deesa: 47, Mehul Society, Near Airport, Deesa, Gujarat, India</p>
                   <p>Canada: 13 Davenfield Cir, Brampton, ON L6P 4M2, Canada</p>
                 </div>

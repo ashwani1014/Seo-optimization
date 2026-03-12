@@ -565,7 +565,7 @@ const page = () => {
                 <p>
                   "Dive into branding insights, creative trends, and strategic updates to stay ahead in the evolving brand landscape with Gujarat's leading branding agency in Ahmedabad."
                 </p>
-                <Link className="circle_btn" href="/blog">
+                <Link className="circle_btn" href="https://blog.postiview.in/">
                   View All <br />
                   Our Blogs <i className="fx-icon-next-arrow" />
                 </Link>

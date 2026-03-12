@@ -52,6 +52,41 @@ const clients = [
     name: "Saajra Realty",
     link: "https://www.instagram.com/saajrarealty/",
     image: "/images/our-client/saajra logo orange.png"
+  },
+  {
+    name: "Sudarshan Developers",
+    link: "#",
+    image: "/images/our-client/Copy of Sudarshan Developers Logo.png"
+  },
+  {
+    name: "Happy Nursery",
+    link: "#",
+    image: "/images/our-client/Happynursery.jpg"
+  },
+  {
+    name: "Nidhi Electrical & Solar",
+    link: "#",
+    image: "/images/our-client/NiddhiElectronics.jpg"
+  },
+  {
+    name: "VH Club",
+    link: "#",
+    image: "/images/our-client/VH LOGO.png"
+  },
+  {
+    name: "Dr.Anita",
+    link: "#",
+    image: "/images/our-client/8.png"
+  },
+  {
+    name: "MBRD Developers",
+    link: "#",
+    image: "/images/our-client/Black.png"
+  },
+  {
+    name: "Vinita Women's Hospital",
+    link: "#",
+    image: "/images/our-client/English Vertical Lockup.png"
   }
 ];
 
@@ -116,16 +151,17 @@ export default function ClientList() {
                         marginBottom: "24px"
                       }}
                     >
-                      <img
-                        src={client.image}
-                        alt={client.name}
-                        style={{
-                          maxHeight: "100%",
-                          maxWidth: "100%",
-                          objectFit: "contain",
-                          padding: "5px"
-                        }}
-                      />
+                      <div style={{ height: "120px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                        <img
+                          src={client.image}
+                          alt={client.name}
+                          style={{
+                            maxHeight: "100%",
+                            maxWidth: "100%",
+                            objectFit: "contain"
+                          }}
+                        />
+                      </div>
                     </div>
                     <h5
                       className="text-center mt-auto"

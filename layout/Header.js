@@ -62,7 +62,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://positive.view.in" className="text_hover_animaiton">
+                    <Link href="https://blog.postiview.in/" className="text_hover_animaiton">
                       <TextHoverAnimation text={'Blog'} />
                     </Link>
                   </li>
